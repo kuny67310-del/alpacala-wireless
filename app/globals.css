@@ -728,10 +728,11 @@ button { font-family: inherit; cursor: pointer; }
 .spec-table td:first-child { font-weight: 600; color: var(--text); }
 
 /* ---------- Contact form ---------- */
-.contact-wrap { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(28px, 3.4vw, 40px); align-items: stretch; }
-/* Let the form card fill the taller column so both sides end on the same line. */
-.contact-wrap > .reveal:not(.contact-info-card) { display: flex; }
-.contact-wrap > .reveal:not(.contact-info-card) > * { flex: 1 1 auto; }
+.contact-wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(28px, 3.4vw, 40px); align-items: stretch; }
+/* Let the form wrapper fill the taller column so both sides end on the same line.
+   Excludes .form-card itself, which is a direct grid child in the static build. */
+.contact-wrap > .reveal:not(.contact-info-card):not(.form-card) { display: flex; }
+.contact-wrap > .reveal:not(.contact-info-card):not(.form-card) > * { flex: 1 1 auto; }
 .contact-info-card { background: var(--navy-900); color: #e7eefb; border-radius: var(--radius-lg); padding: 38px 34px; display: flex; flex-direction: column; }
 .contact-info-card h3 { color: #fff; }
 .contact-info-card p { color: rgba(255,255,255,0.72); }
@@ -838,7 +839,7 @@ button { font-family: inherit; cursor: pointer; }
   .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .footer-top { grid-template-columns: 1fr 1fr; gap: 36px; }
   .tier-grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; }
-  .split, .contact-wrap { grid-template-columns: 1fr; gap: clamp(28px, 4vw, 44px); }
+  .split, .contact-wrap { grid-template-columns: minmax(0, 1fr); gap: clamp(28px, 4vw, 44px); }
   .hero-grid { grid-template-columns: minmax(0, 1fr); gap: clamp(28px, 4vw, 44px); }
   .hero-visual { max-width: 640px; }
   .hero-sub { max-width: 640px; }

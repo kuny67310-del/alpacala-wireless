@@ -60,15 +60,15 @@ export default function Footer() {
             <h5>Contact</h5>
             <div className="footer-contact-line">
               <Icon name="mapPin" />
-              <span>United States</span>
+              <span>209 Clary Ave San Gabriel CA 91776</span>
             </div>
             <div className="footer-contact-line">
               <Icon name="phone" />
-              <Link href="/contact#contactForm">Request a callback</Link>
+              <a href="tel:+16263213068">+16263213068</a>
             </div>
             <div className="footer-contact-line">
               <Icon name="mail" />
-              <span>sales@alpacalawireless.com</span>
+              <a href="mailto:leol@alpacala.net">leol@alpacala.net</a>
             </div>
           </div>
         </div>

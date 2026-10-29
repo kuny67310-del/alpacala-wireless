@@ -37,21 +37,21 @@ export default function ContactPage() {
               <span className="ic"><Icon name="phone" /></span>
               <div>
                 <div className="lbl">Phone</div>
-                <div className="val"><a href="#contactForm">Request a callback</a></div>
+                <div className="val"><a href="tel:+16263213068">+16263213068</a></div>
               </div>
             </div>
             <div className="info-line">
               <span className="ic"><Icon name="mail" /></span>
               <div>
                 <div className="lbl">Email</div>
-                <div className="val"><a href="mailto:sales@alpacalawireless.com">sales@alpacalawireless.com</a></div>
+                <div className="val"><a href="mailto:leol@alpacala.net">leol@alpacala.net</a></div>
               </div>
             </div>
             <div className="info-line">
               <span className="ic"><Icon name="mapPin" /></span>
               <div>
                 <div className="lbl">Location</div>
-                <div className="val">United States</div>
+                <div className="val">209 Clary Ave San Gabriel CA 91776</div>
               </div>
             </div>
             <div className="info-line">
