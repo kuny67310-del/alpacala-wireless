@@ -2,6 +2,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   title: "Alpacala Wireless — Your Trusted Prepaid Wireless Partner",
@@ -48,6 +49,7 @@ export default function RootLayout({ children }) {
         <main id="main">{children}</main>
         <Footer />
         <ScrollReveal />
+        <Analytics />
       </body>
     </html>
   );
